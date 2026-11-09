@@ -26,10 +26,47 @@ some starting cash. The app then:
      trades and win rate
    - a table of every trade
 
+## Download
+
+Already have the project in `~/Projects/stock-backtester`? Skip to
+[Install](#install).
+
+Open the Terminal app (press `Cmd + Space`, type `Terminal`, and press
+Return). Then type or paste these commands, pressing Return after each one.
+They download the project into a `Projects` folder inside your home folder:
+
+```bash
+mkdir -p ~/Projects
+cd ~/Projects
+git clone https://github.com/Shlokk-c/stock-backtester.git
+```
+
+What those commands do:
+
+- `mkdir -p ~/Projects` creates the `Projects` folder. `~` means your home
+  folder: the folder with your username, which holds Desktop, Documents and
+  Downloads. If `Projects` already exists, nothing happens.
+- `cd ~/Projects` moves into that folder.
+- `git clone` uses `git` (a tool for downloading code and tracking changes to
+  it) to copy this project from GitHub into a new folder,
+  `~/Projects/stock-backtester`.
+
+The first time you use `git`, your Mac may open a window asking to install
+its "command line developer tools". Click **Install** and follow the steps.
+Terminal may also print a note about `xcode-select`; you can ignore it. The
+download can take several minutes. When it's done, run all three commands
+again. That's safe, and it works even if you closed Terminal while you
+waited.
+
+The rest of this README assumes the project is in
+`~/Projects/stock-backtester`. If `git clone` says
+`destination path 'stock-backtester' already exists`, you already have the
+project, so go on to Install.
+
 ## Install
 
 You need **Python 3.11 or newer** (this project was built with 3.15). Check
-yours with:
+yours by running this in Terminal:
 
 ```bash
 python3 --version
@@ -40,7 +77,7 @@ you see, install a newer Python from [python.org](https://www.python.org/downloa
 (or run `brew install python` if you use Homebrew), open a new Terminal
 window, and check again.
 
-Then open the Terminal app, go to the project folder, and run:
+Then, in Terminal, go to the project folder and set it up:
 
 ```bash
 cd ~/Projects/stock-backtester
@@ -82,9 +119,11 @@ To stop the app, click the terminal and press `Ctrl + C`.
 
 You can also run the backtest logic without the web page. If the app is
 still running, open a new terminal tab (`Cmd + T`). A new tab starts with the
-virtual environment turned off, so turn it on again first:
+virtual environment turned off, so go to the project folder and turn it on
+again first:
 
 ```bash
+cd ~/Projects/stock-backtester
 source .venv/bin/activate
 python backtest.py
 ```
