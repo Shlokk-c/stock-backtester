@@ -1,0 +1,21 @@
+# Virtual environment (rebuild it with: python3 -m venv .venv)
+.venv/
+venv/
+
+# Secrets and environment variables: never commit these
+.env
+.streamlit/secrets.toml
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Tool caches
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Mac system files
+.DS_Store
+
+# Claude Code's local settings for this folder
+.claude/settings.local.json
