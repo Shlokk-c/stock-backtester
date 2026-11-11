@@ -4,7 +4,7 @@ A small web app that tests a classic trading strategy, the **moving average
 crossover**, on real historical stock prices and compares it with simply
 buying and holding.
 
-*Built for learning. Nothing here is investment advice.*
+*Built for learning purposes ONLY and nothing here is investment advice.*
 
 ## What it does
 
