@@ -49,7 +49,8 @@ The web app starts with the last ten years instead, so it shows different
 numbers. To see this same test in the app, set **Start date** to 2015/01/01
 and **End date** to 2025/01/01 in the sidebar.
 
-## Download
+<details>
+<summary><h2>Download</h2></summary>
 
 Already have the project in `~/Projects/stock-backtester`? Skip to
 [Install](#install).
@@ -86,7 +87,10 @@ The rest of this README assumes the project is in
 `destination path 'stock-backtester' already exists`, you already have the
 project, so go on to Install.
 
-## Install
+</details>
+
+<details>
+<summary><h2>Install</h2></summary>
 
 You need **Python 3.11 or newer** (this project was built with 3.15). Check
 yours by running this in Terminal:
@@ -123,7 +127,13 @@ What those commands do:
 If you already made a `.venv` with an old Python, delete it first with
 `rm -rf .venv` and run the commands again.
 
+</details>
+
 ## Run
+
+First time? Do the Download and Install steps above first (click each
+heading to open it). You only need to do them once. After that, start the
+app with:
 
 ```bash
 cd ~/Projects/stock-backtester
