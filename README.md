@@ -26,6 +26,29 @@ some starting cash. The app then:
      trades and win rate
    - a table of every trade
 
+## Example result
+
+Running `python backtest.py` tests SPY (a fund that tracks the S&P 500)
+with 50-day and 200-day moving averages and $10,000 of starting cash, from
+January 1, 2015 to January 1, 2025. It printed these numbers in November
+2026:
+
+| | Crossover strategy | Buy and hold |
+|---|---|---|
+| Final value | $23,859.14 | $33,957.38 |
+| Total return | 138.6% | 239.6% |
+| Annualized return | 9.1% | 13.0% |
+| Max drawdown | -33.7% | -33.7% |
+| Number of trades | 5 | 1 |
+| Win rate | 60% | 100% |
+
+Over those ten years, simply buying and holding SPY beat the crossover
+strategy. If you run `python backtest.py` yourself (see [Run](#run)), your
+numbers may differ slightly, because Yahoo sometimes updates its price data.
+The web app starts with the last ten years instead, so it shows different
+numbers. To see this same test in the app, set **Start date** to 2015/01/01
+and **End date** to 2025/01/01 in the sidebar.
+
 ## Download
 
 Already have the project in `~/Projects/stock-backtester`? Skip to
